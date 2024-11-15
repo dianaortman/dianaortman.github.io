@@ -206,48 +206,42 @@ nav {
 .columns-container {
     display: flex;
     justify-content: space-between;
-}
-  
-.columns-2-container .column {
-    width: 45%;
-}
-  
-.columns-3-container {
     flex-wrap: wrap;
     row-gap: 25px;
 }
   
-.columns-3-container .column {
+.columns-2 {
+    width: 45%;
+}
+  
+.columns-3 {
     width: 32%;
 }
   
-.columns-4-container .column {
+.columns-4 {
     text-align: center;
-    flex-basis: 25%;
+    width: 25%;
 }
-
-@media screen and (max-width: 992px) {
-    .columns-3-container {
-      flex-direction: row;
-    }
   
-    .columns-3-container .column {
+@media screen and (max-width: 992px) {
+    .columns-3 {
       width: 49%;
     }
-  }
+}
   
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .columns-container {
       flex-direction: column;
     }
   
-    .columns-2-container .column,
-    .columns-3-container .column {
+    .columns-2,
+    .columns-3 {
       width: 100%;
     }
   
-    .columns-4-container {
-      row-gap: 20px;
+    .columns-4 {
+      text-align: center;
+      width: 100%;
     }
 }
 
